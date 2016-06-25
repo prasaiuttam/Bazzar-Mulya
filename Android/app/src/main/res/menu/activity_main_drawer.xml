@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/news"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="NewsFeed" />
+
+        <item
+            android:id="@+id/login"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Login" />
+        <item
+            android:id="@+id/update"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Update" />
+        <item
+            android:id="@+id/location"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Location Based List" />
+
+        <item
+            android:id="@+id/product"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Product Based List" />
+    </group>
+
+    <item android:title="Contribute">
+        <menu>
+            <item
+                android:id="@+id/enterdata"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Enter Data" />
+
+        </menu>
+    </item>
+
+</menu>
