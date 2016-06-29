@@ -1,0 +1,107 @@
+\documentclass[12ptpt,a4paper]{article}
+\usepackage{enumerate}
+\usepackage{pgfgantt}
+\usepackage{titlesec}
+\usepackage[margin=0.75in]{geometry}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}\setcounter{secnumdepth}{4}
+\addbibresource{ref.bib}
+
+\begin{document}
+	\pagenumbering{gobble}	
+	\begin{abstract}
+In Nepal, most of the things that we buy are not from the supermarkets but from local shops. A frequent problem that can occur while buying from these shops is price variation of same commodities. Bazzar Mulya solves this problem by creating a location specific database of some of the daily used goods by collecting price info from the users and applying algorithms to select the minimum price among them. With this the user atleast know the minimum price of goods they are buying before going shopping. Such database would also allow people to compare prices of goods at different places, making it easier for them to decide what to buy when visiting another place.
+	\end{abstract}
+	\newpage
+	\tableofcontents
+	\newpage	
+	\pagenumbering{arabic}
+	\section{Introduction}
+	\subparagraph{} During the immediate aftermath of 2072 earthquake, there was a lot of fluctuation in prices of different daily used items. Many goods were sold at higher prices than they were worth because of the state of panic. At times like these, one of the ways to accurately know the prices of goods is by asking the manufacturer. But this is not always possible. The other way,that we have came up with, is to analyze price of goods at all the neighboring shops, and find the least price , excluding special discounts. This can be done on a location basis, so we end up with price database of various locations.
+		\subsection{Objectives}
+		\begin{itemize}
+			\item To create a price database of daily commodities like rice, sugar etc.
+			\item To create a web site and an android app so that users can view the price database. 
+			\item To create a mechanism so that the prices can be updated by data sent by users.
+			\item To use a machine learning algorithm so that the prices can be updated automatically.
+		\end{itemize}
+		\subsection{Features}
+			 By the time of completion of this program, we hope to include the following features.
+			\begin{itemize}
+			\item The database will hold the tentative prices of the daily used goods.
+			\item The project will include an android app and a website.
+			\item There will be multiple access level. Users, Shop Keepers, Location Admin and Main Admins.
+			\item The price update process will be automatic.
+			\item The price database will be location specific. Different places will have different database. This will allow price comparison between different place.
+			\item The program will display comparison of prices of goods in two different locations. 
+		\end{itemize}
+		
+		\subsection{Limitations}
+		Bazzar Mulya will have following limitations.
+		\begin{itemize}
+			\item The algorithm depends on the user input. Without sufficient data it can't work properly.
+			\item If most of the users send false data, the calculated price will also be false.
+			\item It will include prices of only few items.
+		\end{itemize}
+		\subsection{Case Study}
+		\subparagraph{} In the developed countries, most of the data about prices is available online. Since there are many online shops, the users have the luxury of comparing prices between them and selecting the best option. In Nepal, the online business have just started taking off. Sites like Kaymu, Sasto Deals and Sabaiko Mart offer online shopping feature to costumers. But most of these sites only sell electrical equipment like laptops, cell phones, etc. They do not sell daily used items like rice, sugar etc. And again, most of the things are still bought from the actual shops, not online shops.
+		\subparagraph{} Similarly, a project called KaliMatiMarket lists the prices of vegetables at Kalimati, which is the biggest vegetable market of Nepal \cite{kalimati}. But price information on Kalimati doesn't help most users, as prices vary when they are distributed to local shops. It is also limited to vegetable prices.
+
+	\newpage	
+	\section{Discussion}
+	\subsection{Tools Used}
+		We have decided to use the following tools for the project.		
+			\subsubsection{HTML \& CSS}HTML(the Hypertext Markup Language) and CSS (Cascading Style Sheets) are two of the core technologies for building Web pages. HTML provides the strucure of the page, CSS the (visual and aural) layout, for a variety of devices. HTML and CSS are the basis of building Web pages and Web Application\cite{html}.
+			\subsubsection{Programming Languages}
+				\paragraph{Python}Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or java. The language provides constructs intended to enable clear programs on both a small and a large scale\cite{python}. We are using python(version 3) because it has libraries that we need -django and scikit-learn.
+				\paragraph{Java Script}JavaScript is a lightweight, interpreted programming language. It is designed for creating network-centric applicatios\cite{javascript}. We are using javascript to make the web site responsive.
+				\paragraph{Java}Java is a programming language expressly designed for use in the distributed environment of the Internet. It was designed to have the "look and feel" of the C++ language, but it is simpler to use than C++ and enforces an object-oriented programming model\cite{java}. In the project, java is used to develop android app.
+			\subsubsection{Libraries}
+				\paragraph{Django}Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design. Built by experienced developers, it takes care of much of the hassle of Web development\cite{django}. We are using django to build back end of the website.
+				\paragraph{Scikit Learn}Scikit-Learn is a python based collection of simple and efficient tools for data mining and data analysis built on NumPy, SciPy and Matplotlib libraries\cite{sclearn}. We are using scikit-learn for implementation of machine learning algorithm.
+			\subsubsection{IDE}
+				\paragraph{Andrsoid Studio} Android studio is an intelligent code editor capable of advanced code completion,refactoring, and code analysis. It automatically downloads the necessary tools for android app development\cite{android}. So, to develop the android app, we are using Android Studio.
+	\newpage		
+	\section{System Overview}	
+		\subsection{Algorithm}
+		\begin{enumerate}[{Step}~1:]			
+			\item Start
+			\item Collect data from the users, via website and mobile application.
+			\item Apply machine learning algorithm to select the best price from the entered data for each item. 
+			\item If the result of a particular location is unusual, notify the Location Admins.
+			\item If there are many anomalies, notify the Root Admins.
+			\item Update the price database.
+			\item Display the database in site and the mobile application.
+			\item End
+		\end{enumerate}
+	\newpage	
+	\section{Gantt Chart}
+	The project will follow the schedule given below. The first week started from 10th April, 2016.
+
+	\begin{ganttchart}[hgrid,
+		vgrid,
+		x unit =1 cm,
+		bar/.append style={fill=gray}		
+		]{1}{10}
+		\gantttitle{Weeks}{10} \\
+		\gantttitlelist{1,...,10}{1} \\
+		\ganttbar{Preliminary Research}{1}{2} \\
+		\ganttbar{Proposal Submission}{2}{2} \\
+		\ganttbar{Learning Web Development}{2}{5} \\
+		\ganttbar{Learning App Development}{2}{5} \\
+		\ganttbar{Coding}{4}{7} \\
+		\ganttbar{Data Collection}{8}{10} \\
+		\ganttbar{Testing and Debugging}{8}{10}	
+	\end{ganttchart}
+	\break
+	\newpage	
+	\section{Conclusion}
+	The project aims to create a platform which will help people. The platform will be built based on the contributions of the people. With this project we hope to create a mechanism by which people helps others and themselves by contribution of information that is easily available to them.
+	\newpage
+	\section{References}
+	\printbibliography[heading=none]
+\end{document}
+	
