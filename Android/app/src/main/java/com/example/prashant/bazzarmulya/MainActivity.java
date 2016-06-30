@@ -83,6 +83,8 @@ public class MainActivity extends AppCompatActivity
             startActivity(intent);
 
         } else if (id == R.id.update) {
+            Update update=new Update(this);
+            update.execute();
 
         } else if (id == R.id.enterdata) {
             FragmentManager fragmentManager=getFragmentManager();

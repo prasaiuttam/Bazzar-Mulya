@@ -10,7 +10,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainFragment extends Fragment{
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -21,7 +20,6 @@ public class MainFragment extends Fragment{
         textView.setText("Hello From The Fragment");
         textView.setId(23);
         layout.setOrientation(LinearLayout.VERTICAL);
-
         layout.addView(textView);
         return layout;
     }
