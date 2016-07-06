@@ -28,7 +28,8 @@ public class Update extends AsyncTask<Void, Void, Void> {
     private JSONObject jsonObject;
     private JSONArray prices;
     private  StringRequest request=null;
-    private static  final  String url="http://192.167.0.3/apiprice/";
+   // private static  final  String url="http://192.167.0.3/apiprice/";
+    private  static final String url="http://192.168.1.114/apiprice/";
     private boolean requestComplete=true;
     private String itrUrl;
     private int count=0;
@@ -92,10 +93,14 @@ public class Update extends AsyncTask<Void, Void, Void> {
         for(int i=0;i<json.length();i++){
         try{
             count+=1;
-            System.out.println("Product"+json.getJSONObject(i).getString("product"));
-            System.out.println("Area"+json.getJSONObject(i).getString("area"));
-            System.out.println("Price"+json.getJSONObject(i).getString("price"));
+            String product=json.getJSONObject(i).getString("product");
+            String area=json.getJSONObject(i).getString("area");
+            String price="Price"+json.getJSONObject(i).getString("price");
+            int p=23;//Integer.valueOf(price);
             System.out.println("******************************");
+            DatabaseHelper myDB=new DatabaseHelper(this.activity);
+
+            myDB.insertData(product,area,p);
 
 
         }catch (JSONException e){

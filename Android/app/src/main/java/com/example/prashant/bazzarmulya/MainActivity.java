@@ -77,8 +77,16 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+        if (id== R.id.product){
+            FragmentManager fragmentManager=getFragmentManager();
+            FragmentTransaction transaction=fragmentManager.beginTransaction();
+            MyListFragment fragment=new MyListFragment();
+            transaction.replace(R.id.content,fragment).commit();
 
-        if (id == R.id.login) {
+        }
+
+
+     else if (id == R.id.login) {
            Intent intent=new Intent(this,LoginActivity.class);
             startActivity(intent);
 
@@ -93,7 +101,12 @@ public class MainActivity extends AppCompatActivity
             transaction.replace(R.id.content,fragment).commit();
 
 
-        } else if (id == R.id.location) {
+        }  else if (id == R.id.location) {
+
+            FragmentManager fragmentManager=getFragmentManager();
+            FragmentTransaction transaction=fragmentManager.beginTransaction();
+            MyLocationFragment fragment=new MyLocationFragment();
+            transaction.replace(R.id.content,fragment).commit();
 
         }
 
