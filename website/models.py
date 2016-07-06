@@ -1,13 +1,15 @@
 from django.db import models
 from django.conf import settings
 Area = [
-    ("KTM","Kathmandu"),
-    ("BRT","Biratnagar"),
-    ("DHK","Dhulikhel")
+    ("Kathmandu","Kathmandu"),
+    ("Biratnagar","Biratnagar"),
+    ("Dhulikhel","Dhulikhel"),
+    ("Jhapa","Jhapa"),
 ]
 Product=[
-    ("1","Chauchau"),
-    ("2","SomethingElse")
+    ("Chauchau","Chauchau"),
+    ("SomethingElse","SomethingElse"),
+    ("SubashLeJptBolyo","SubashLeJPtBolyo"),
 
 ]
 
@@ -30,3 +32,4 @@ class Prices(models.Model):
 
     def __str__(self):
         return  str(self.product)+" "+str(self.area)
+
