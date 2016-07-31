@@ -58,8 +58,8 @@ public  class  MyLocationFragment extends ListFragment {
 
         DatabaseHelper myDB=new DatabaseHelper(this.getActivity());
 
-       // myDB.insertData("Mayos", "Kathmandu", 105);
-       // myDB.insertData("Momo", "bhaktapur", 96);
+       //myDB.insertData("Mayos", "Kathmandu", 105);
+      // myDB.insertData("Momo", "bhaktapur", 96);
 
         Cursor cursor = myDB.getDataBylocation();
 
@@ -92,6 +92,7 @@ public  class  MyLocationFragment extends ListFragment {
     {
         String  Selected1= (String) i.getItemAtPosition(position);
         FragmentManager fragmentManager=getFragmentManager();
+
         android.app.FragmentTransaction transaction=fragmentManager.beginTransaction();
         MyLocationFragment2 fragment=new MyLocationFragment2();
         Bundle args = new Bundle();
@@ -101,9 +102,11 @@ public  class  MyLocationFragment extends ListFragment {
 //        "SELECT * FROM products WHERE products.location = " + locations.get(position);
 //        args.putString("PRICE", prices.get(position));
         fragment.setArguments(args);
+
         transaction.replace(R.id.content,fragment).commit();
 
         ViewGroup viewGroup = (ViewGroup) view;
+
         TextView txt = (TextView) viewGroup.findViewById(R.id.txtitem);
         Toast.makeText(getActivity(), txt.getText().toString(), Toast.LENGTH_LONG).show();
     }

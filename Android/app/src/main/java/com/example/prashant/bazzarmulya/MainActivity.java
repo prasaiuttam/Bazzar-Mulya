@@ -81,7 +81,9 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fragmentManager=getFragmentManager();
             FragmentTransaction transaction=fragmentManager.beginTransaction();
             MyListFragment fragment=new MyListFragment();
+            getSupportActionBar().setTitle("Product");
             transaction.replace(R.id.content,fragment).commit();
+
 
         }
 
@@ -98,6 +100,7 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fragmentManager=getFragmentManager();
             FragmentTransaction transaction=fragmentManager.beginTransaction();
             MainFragment fragment=new MainFragment();
+            getSupportActionBar().setTitle("extradata");
             transaction.replace(R.id.content,fragment).commit();
 
 
@@ -106,7 +109,9 @@ public class MainActivity extends AppCompatActivity
             FragmentManager fragmentManager=getFragmentManager();
             FragmentTransaction transaction=fragmentManager.beginTransaction();
             MyLocationFragment fragment=new MyLocationFragment();
+            getSupportActionBar().setTitle("Location");
             transaction.replace(R.id.content,fragment).commit();
+
 
         }
 

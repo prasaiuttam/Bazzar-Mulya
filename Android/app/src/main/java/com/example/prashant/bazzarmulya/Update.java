@@ -1,8 +1,10 @@
 package com.example.prashant.bazzarmulya;
 
 import android.app.Activity;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.os.SystemClock;
+import android.support.design.widget.Snackbar;
 import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
@@ -40,6 +42,8 @@ public class Update extends AsyncTask<Void, Void, Void> {
     public Update(Activity activity){
         this.activity=activity;
         requestQueue= Volley.newRequestQueue(activity);
+
+
     }
     @Override
     protected Void doInBackground(Void... params) {
@@ -113,9 +117,18 @@ public class Update extends AsyncTask<Void, Void, Void> {
     @Override
     protected void onProgressUpdate(Void... values) {
         super.onProgressUpdate();
-        /*Toast toast=new Toast(activity);
-        toast.setText("Update SucessFul");
-        toast.show();*/
+
+//        Toast toast=new Toast(activity);
+//        toast.setText("Update SucessFul");
+//        toast.show();
+
+
+    }
+
+    @Override
+    protected void onPostExecute(Void aVoid) {
+        Toast.makeText(activity, "Update Successfull", Toast.LENGTH_SHORT).show();
+        super.onPostExecute(aVoid);
     }
 }
 

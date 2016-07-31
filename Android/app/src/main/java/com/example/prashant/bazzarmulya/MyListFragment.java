@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.support.v4.app.FragmentTransaction;
 
 import android.support.v4.view.ViewGroupCompat;
+import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -99,10 +100,14 @@ public  class  MyListFragment extends ListFragment {
 //        "SELECT * FROM products WHERE products.location = " + locations.get(position);
 //        args.putString("PRICE", prices.get(position));
         fragment.setArguments(args);
+
         transaction.replace(R.id.content,fragment).commit();
 
         ViewGroup viewGroup = (ViewGroup) view;
+
+
         TextView txt = (TextView) viewGroup.findViewById(R.id.txtitem);
+      //  ((ActionBarActivity) getActivity()).getSupportActionBar().setTitle(txt.getText().toString());
         Toast.makeText(getActivity(), txt.getText().toString(), Toast.LENGTH_LONG).show();
     }
 
