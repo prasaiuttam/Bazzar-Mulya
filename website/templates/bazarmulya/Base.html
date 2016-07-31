@@ -1,0 +1,74 @@
+<html>
+<head>
+    {% load staticfiles %}
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.jpg' %}"/>>
+    <link rel="stylesheet" type="text/css" href="{% static 'bazarmulya/w3.css' %}"/>
+
+    <link rel="stylesheet" type="text/css" href="{% static 'bazarmulya/stylesheet.css' %}"/
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
+
+
+    <script type="text/javascript" src="{% static 'bazarmulya/jquery-3.0.0.min.js'  %}"></script>
+    <script src="{% static 'bazarmulya/search.js' %}"></script>
+
+</head>
+
+<body>
+
+
+<div class="header">
+    <ul>
+
+
+        {% if not user.is_authenticated %}
+
+        <li><a href="/website/login">Login</a></li>
+        <li><a href="/website/register">Register</a></li>
+
+        {% else %}
+         <li>Welcome  {{user}}</li>
+        <li><a href="/website/logout/">Logout</a></li>
+        {% endif %}
+
+
+    </ul>
+</div>
+<!--NavBar Section-->
+<div class="w3-container  w3-card-4 w3-light-grey " style="margin: 30px auto 0; width: 90%;">
+    <div id="nav-bar" class="container w3-blue" style="margin-top: 10px;">
+        <ul class="w3-navbar" style="line-height: 50px;">
+            <li><a href="/website/">Home</a></li>
+            <li><a href="#">Map</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">About Us</a></li>
+            {% csrf_token %}
+
+            <li class="" style="float:right;text-align:right;line-height: 20px;margin:17px 10px 0 17px">
+                <input id="search" name="search" type="text" placeholder="Search..."/>
+                <div id="search-results" class="w3-container w3-white w3-card-4">
+                 </div>
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    {% block body %}
+
+
+    {% endblock %}
+    <!--Footer Section-->
+
+
+
+
+</div>
+<div class="w3-container w3-section w3-card-4 w3-teal w3-center" style="margin: 30px auto 0; width: 90%;">
+        <p>This site was created by 2nd year 2nd semester students for the fullfillment of the course project.</p>
+        <p>&copy; Copyrights reserved by Team Sudo 2016-infinity. </p>
+    </div>
+</body>
+
+</html>
+

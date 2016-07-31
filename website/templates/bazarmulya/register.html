@@ -1,0 +1,31 @@
+{% extends 'bazarmulya/Base.html' %}
+<title>Register page</title>
+{% block body %}
+<div class="w3-container ">
+                    <h3 class="w3-center">Register</h3>
+                    {% if error_message %}
+                    <p><strong>{{ error_message }}</strong></p>
+                    {% endif %}
+                  <div class="w3-padding">
+                    <form class="w3-container" role="form" action="" method="post" enctype="multipart/form-data">
+                        {% csrf_token %}
+
+                        {% for fields in form %}
+
+                                {{ fields.errors }}
+
+                          <div class="w3-padding-bottom"> <label class="w3-label w3-text-grey">{{ fields.label_tag }}</label><br>
+                            {{ fields }}</div>
+
+                        {% endfor %}
+
+
+                                <button type="submit" class="btn btn-success">Submit</button>
+                        {{message}}
+
+                    </form>
+                      </div>
+
+</div>
+
+{% endblock %}

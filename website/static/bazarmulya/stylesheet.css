@@ -1,0 +1,178 @@
+.header {
+	padding: 5px;
+	margin: 0 5% 0 10px;
+}
+
+.header ul{
+	list-style-type: none;
+}
+
+.header ul li {
+	margin-left: 20px;
+	float: right;
+}
+
+.header ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 15px;
+}
+
+.header ul li a:hover {
+	text-decoration:underline;
+	color: blue;
+}
+
+.header:after {
+	content: "";
+	clear: right;
+}
+
+.footer {
+
+}
+
+.footer ul {
+	list-style-type: none;
+}
+
+.footer ul li a {
+	text-decoration: none;;
+}
+
+.footer ul li a:hover {
+	color: brown;
+}
+* {
+    box-sizing: border-box;
+}
+
+.align-right {
+    float: right;
+}
+
+.align-right::after {
+    content: "";
+    clear: both;
+}
+
+.align-center {
+    text-align: center;
+    margin: 0 auto 0;
+}
+
+.home-image {
+    max-width: 100%;
+    height: auto;
+}
+.container-form {
+	background-color: white;
+	margin: 50px auto 0;
+	width: 300px;
+	border-radius: 5px;
+
+	}
+
+
+.left-sidebar {
+    margin: 10px 0 0 10px;
+    background-color: #eee;
+    height: auto;
+    min-height: 600px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px #666;
+
+}
+
+.main-content {
+    background-color: #eee;
+    margin: 10px 0 0 10px;
+    height: auto;
+    width: 81%;
+    min-height: 600px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px gray;
+
+}
+
+.form-container {
+    margin: 0 auto 0;
+    display: block;
+    width: 300px;
+    height: auto;
+    padding: 10px 10px 50px 10px;
+    background-color: white;
+    border-radius: 5px;
+
+}
+
+form {
+    display: inline-block;
+    width: inherit;
+    height: auto;
+    padding: 10px;
+}
+
+.form-element {
+
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding:10px;
+}
+
+.left-sidebar ul {
+
+    /* list-style-type: none; */
+
+}
+
+.left-sidebar ul a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 0.3em;
+    width: auto;
+    color: black;
+}
+
+.left-sidebar ul a:hover {
+    background: gray;
+}
+
+#nav-bar {
+
+}
+
+#search-results{
+    width: 240px;
+    position: absolute;
+    z-index:1000;
+}
+
+
+#search-results ul {
+
+     list-style-type: none;
+
+
+}
+
+
+#search-results  ul a {
+
+    padding: 10px;
+    text-decoration: none;
+    line-height: 0.3em;
+    width: auto;
+    color: black;
+}
+
+#search-results ul a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    line-height: 0.3em;
+    width: auto;
+    color: black;
+}

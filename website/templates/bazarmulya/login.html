@@ -1,0 +1,26 @@
+{% extends 'bazarmulya/Base.html' %}
+<title>Login page</title>
+{%block body %}
+
+<div class="container">
+    <h3 class="align-center">Enter your Username and Password </h3><br>
+    <div class="form-container">
+        <div class="align-center">
+            <form class="login-form" action="" method="post">{% csrf_token %}
+
+                <input class="form-element" type="text" name="username" placeholder="Username"/><br>
+                <input class="form-element" type="password" name="password" placeholder="Password"/><br>
+
+                <input class="form-element" type="submit" value="Login"/>
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{{message}}
+
+{% endblock %}
+
+

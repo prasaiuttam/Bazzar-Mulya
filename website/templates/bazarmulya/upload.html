@@ -1,0 +1,28 @@
+{% extends 'bazarmulya/Base.html' %}
+{% load staticfiles %}
+{% block body%}
+
+<h3>Upload Values</h3>
+
+<div class=" w3-padding">
+<form role="form" action="" method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {% for fields in form%}
+
+        {{ fields.errors }}
+       <div class="w3-padding-bottom"> <label class="w3-labe">{{ fields.label_tag }}</label><br>
+            {{ fields }} </br>
+
+</div>
+    {% endfor %}
+    <button type="submit">Submit</button>
+</form>
+
+    </div>
+
+{% endblock %}
+
+
+
+
+
