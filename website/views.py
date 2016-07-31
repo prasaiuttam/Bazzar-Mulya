@@ -32,7 +32,9 @@ def CategoryView(request):
     return  render(request,"bazarmulya/category_sample.html",{'category': cat,'list':list,'name':name})
 
 def home(request):
-
+    news = NewsFeed.objects.all()
+    news=news[::-1]
+    news=news[0:3]
     cat=[i[1] for i in Category ]
     print ("***********",cat,"*****************")
     if request.user.is_authenticated():
@@ -53,12 +55,18 @@ def home(request):
             'notifications' : notifications,
             'lists':lists,
             'category': cat,
+            'news':news
     })
     else:
         lists = Prices.objects.all()
         return render(request,'bazarmulya/default_home.html',{'lists':lists,'category':cat})
 
 
+def NewsFeeds(request):
+    a=request.GET["id"];
+    news=NewsFeed.objects.get(id=a)
+    return  render(request,"bazarmulya/news.html",{'article':news})
+    pass
 
 def Login(request):
     cat=[i[1] for i in Category ]

@@ -1,0 +1,30 @@
+{% extends 'bazarmulya/Base.html' %}
+{% load staticfiles %}
+<title>News</title>
+
+
+{% block body %}
+				<div class="w3-container">
+                    <div class="w3-section w3-padding">
+                        <h4 class="w3-text-grey w3-xlarge">News Feed</h4>
+                    </div>
+
+                    <div class="w3-section">
+                        <div class="w3-section w3-padding w3-card-2">
+                             <div class="w3-section w3-padding">
+                            <h3 class="w3-text-grey w3-large">{{article.title}}</h3>
+                        </div>
+                        <p class="w3-padding w3-margin-left w3-justify">{{article.date}} {{article.author}} {{article.data}}</p>
+                    </div>
+
+                    </div>
+
+
+
+                </div>
+
+
+		</div>
+
+
+{%endblock%}
