@@ -11,7 +11,7 @@ urlpatterns = [
     url(r'^search/$', views.Search, name='search'),
     url(r'^search/(?P<product_id>[0-9]+)/$',views.Search_detail),
     url(r'^notifylike/(?P<getid>[0-9]+)$',views.NotifyLike),
-    url(r'^updatevalues/$',views.UpdateValues)
-
+    url(r'^updatevalues/$',views.UpdateValues),
+    url(r'^category_desc/$',views.CategoryView)
 
 ]

@@ -2,22 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74140f64-1a8d-4491-8b44-47a303ee9922" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/migrations/0004_auto_20160706_0944.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/templates/SignInForm.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/website/templates/SignUnForm.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db.sqlite3" afterPath="$PROJECT_DIR$/db.sqlite3" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Android/.idea/misc.xml" afterPath="$PROJECT_DIR$/Android/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/__init__.py" afterPath="$PROJECT_DIR$/website/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/admin.py" afterPath="$PROJECT_DIR$/website/admin.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/apps.py" afterPath="$PROJECT_DIR$/website/apps.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/forms.py" afterPath="$PROJECT_DIR$/website/forms.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/migrations/0001_initial.py" afterPath="$PROJECT_DIR$/website/migrations/0001_initial.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/migrations/0002_auto_20160611_1700.py" afterPath="$PROJECT_DIR$/website/migrations/0002_auto_20160611_1700.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/migrations/0003_prices.py" afterPath="$PROJECT_DIR$/website/migrations/0003_prices.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/migrations/__init__.py" afterPath="$PROJECT_DIR$/website/migrations/__init__.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/models.py" afterPath="$PROJECT_DIR$/website/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/tests.py" afterPath="$PROJECT_DIR$/website/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/bazarmulya/Base.html" afterPath="$PROJECT_DIR$/website/templates/bazarmulya/Base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/templates/bazarmulya/default_home.html" afterPath="$PROJECT_DIR$/website/templates/bazarmulya/default_home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/urls.py" afterPath="$PROJECT_DIR$/website/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/website/views.py" afterPath="$PROJECT_DIR$/website/views.py" />
     </list>
@@ -43,11 +32,31 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="604">
-              <caret line="101" column="37" selection-start-line="101" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="101" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="categories.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/categories.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="608">
+              <caret line="48" column="50" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="category_sample.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/category_sample.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="315">
+              <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -65,8 +74,8 @@
       <file leaf-file-name="admin.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/admin.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
+            <state relative-caret-position="90">
+              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -74,22 +83,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="jquery-3.0.0.min.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/static/bazarmulya/jquery-3.0.0.min.js">
+      <file leaf-file-name="default_home.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/default_home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-15172">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="register.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="74" selection-start-line="9" selection-start-column="72" selection-end-line="9" selection-end-column="74" />
-              <folding />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#2;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -97,8 +101,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="555">
+              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -107,25 +111,9 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="180">
+              <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default_home.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/default_home.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -140,12 +128,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Base.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Base.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/Base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
-              <folding />
+            <state relative-caret-position="559">
+              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,7 +148,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/website/urls.py" />
         <option value="$PROJECT_DIR$/Permission.py" />
         <option value="$PROJECT_DIR$/website/templates/SignUnForm.html" />
         <option value="$PROJECT_DIR$/bazzar/api/admin.py" />
@@ -169,13 +158,15 @@
         <option value="$PROJECT_DIR$/website/forms.py" />
         <option value="$PROJECT_DIR$/website/templates/bazarmulya/search.html" />
         <option value="$PROJECT_DIR$/website/static/bazarmulya/search.js" />
-        <option value="$PROJECT_DIR$/website/views.py" />
         <option value="$PROJECT_DIR$/bazzar/api/models.py" />
+        <option value="$PROJECT_DIR$/website/static/bazarmulya/stylesheet.css" />
         <option value="$PROJECT_DIR$/website/admin.py" />
         <option value="$PROJECT_DIR$/website/models.py" />
-        <option value="$PROJECT_DIR$/website/static/bazarmulya/stylesheet.css" />
-        <option value="$PROJECT_DIR$/website/templates/bazarmulya/Base.html" />
         <option value="$PROJECT_DIR$/website/templates/bazarmulya/default_home.html" />
+        <option value="$PROJECT_DIR$/website/urls.py" />
+        <option value="$PROJECT_DIR$/website/templates/bazarmulya/Base.html" />
+        <option value="$PROJECT_DIR$/website/views.py" />
+        <option value="$PROJECT_DIR$/website/templates/bazarmulya/category_sample.html" />
       </list>
     </option>
   </component>
@@ -319,6 +310,32 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bazarmulya" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazzar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazzar" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bazarmulya" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -539,7 +556,7 @@
     <frame x="0" y="30" width="1920" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19947916" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -580,32 +597,16 @@
           <line>1</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="python-line">
+          <url>file://$PROJECT_DIR$/website/urls.py</url>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/website/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="24" column="27" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/apps.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -891,7 +892,7 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#32#0" expanded="true" />
+            <element signature="e#0#32#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -901,7 +902,7 @@
         <state relative-caret-position="165">
           <caret line="11" column="27" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="27" />
           <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -930,42 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bazzar/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="68" selection-start-line="1" selection-start-column="68" selection-end-line="1" selection-end-column="68" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/website/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="604">
-          <caret line="101" column="37" selection-start-line="101" selection-start-column="0" selection-end-line="102" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -976,16 +941,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/website/static/bazarmulya/jquery-3.0.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15172">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="728">
+          <caret line="1" column="21241" selection-start-line="1" selection-start-column="20369" selection-end-line="1" selection-end-column="21241" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bazzar/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+        <state relative-caret-position="555">
+          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -998,24 +981,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/Base.html">
+    <entry file="file://$PROJECT_DIR$/website/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="6" column="91" selection-start-line="6" selection-start-column="91" selection-end-line="6" selection-end-column="91" />
+        <state relative-caret-position="180">
+          <caret line="14" column="46" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/default_home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="22" />
           <folding>
             <element signature="n#style#0;n#img#0;n#div#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#li#0;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#li#2;n#ul#0;n#div#1;n#div#1;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#2;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/categories.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="608">
+          <caret line="48" column="50" selection-start-line="48" selection-start-column="45" selection-end-line="48" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="101" selection-start-line="31" selection-start-column="101" selection-end-line="31" selection-end-column="101" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/category_sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website/templates/bazarmulya/Base.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="559">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

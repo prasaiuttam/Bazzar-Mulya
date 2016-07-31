@@ -1,0 +1,38 @@
+{% extends 'bazarmulya/Base.html' %}
+{% load staticfiles %}
+{%block body%}
+				<div class="w3-container">
+                    <div class="w3-section w3-padding">
+                        <h4 class="w3-text-grey w3-xlarge">{{name}}</h4>
+                    </div>
+                    
+                    <div class="w3-responsive w3-padding w3-margin-bottom">
+			<table class="w3-table-all" style="width: 60%; min-width: 300px;"> <!-- Make the table bordered!!! -->
+				<tr class="w3-red">
+					<th>Product Name</th>
+					<th>Location</th>
+					<th>Price</th>
+					
+                    
+				</tr>
+				{%for i in list%}
+				<tr>
+					<td>{{i.product}}</td>
+					<td>{{i.area}}</td>
+					<td>{{i.price}}</td>
+				</tr>
+					{%endfor%}
+
+
+			</table>	
+		</div>
+                    
+                    
+                   
+                </div>
+                        
+                    
+		</div>
+		
+
+{%endblock%}

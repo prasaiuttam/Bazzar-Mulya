@@ -7,13 +7,34 @@ from django.shortcuts import render_to_response
 from django.utils import timezone
 from django.contrib.auth.models import  User
 from .forms import UserForm,UploadForm,SigninForm
-from .models import Notification,Raw_Prices,Prices,Category
+from .models import Notification,Raw_Prices,Prices,Category,NewsFeed
 
 
+
+def categories(request):
+    cat=[i[1] for i in Category ]
+    category=dict()
+    list=[]
+    for i in Category:
+
+        list+=i[1]
+
+    return  render(request,'bazzarmulya/categories.html',{category:list,'category': cat})
+
+def CategoryView(request):
+    cat=[i[1] for i in Category ]
+    dcat=dict()
+    for i in Category:
+        dcat[i[1]]=i[0]
+    name=request.GET["cat"]
+    list = Prices.objects.filter(category=dcat[name])
+    print(list)
+    return  render(request,"bazarmulya/category_sample.html",{'category': cat,'list':list,'name':name})
 
 def home(request):
 
-
+    cat=[i[1] for i in Category ]
+    print ("***********",cat,"*****************")
     if request.user.is_authenticated():
         try:
             notifications = Notification.objects.filter(reciever_id=request.user,is_read=False)
@@ -25,22 +46,22 @@ def home(request):
         except Notification.DoesNotExist:
             notifications = None
         lists = Prices.objects.all()
-        print("the lis ist",lists);
+        print("the lis ist",lists)
 
 
         return render(request,'bazarmulya/default_home.html',{
             'notifications' : notifications,
             'lists':lists,
-
-
+            'category': cat,
     })
     else:
         lists = Prices.objects.all()
-        return render(request,'bazarmulya/default_home.html',{'lists':lists})
+        return render(request,'bazarmulya/default_home.html',{'lists':lists,'category':cat})
 
 
 
 def Login(request):
+    cat=[i[1] for i in Category ]
     if request.method == "POST":
         username = request.POST['username']
         password = request.POST['password']
@@ -54,13 +75,14 @@ def Login(request):
                     'lists':lists
                 })
         else:
-            return render(request,'bazarmulya/login.html',{'message':"Enter a Valid Username and Password"})
+            return render(request,'bazarmulya/login.html',{'message':"Enter a Valid Username and Password",'category': cat})
 
     return render(request,'bazarmulya/login.html',{})
 
 
 
 def Register(request):
+    cat=[i[1] for i in Category ]
     form = SigninForm(request.POST or None)
     if form.is_valid():
         email=form.cleaned_data.get('email')
@@ -75,16 +97,18 @@ def Register(request):
         user.save()
         return render(request, 'bazarmulya/login.html', {'message': "Congrats!!! You have been Registered. Now Sign In"})
 
-    return render(request,'bazarmulya/register.html',{'form':form})
+    return render(request,'bazarmulya/register.html',{'form':form,'category': cat})
 
 
 def Logout_view(request):
+    cat=[i[1] for i in Category ]
     logout(request)
     message = "You are Logged Out"
     lists = Prices.objects.all()
-    return render(request,'bazarmulya/default_home.html',{'message':message,'lists':lists})
+    return render(request,'bazarmulya/default_home.html',{'message':message,'lists':lists,'category': cat})
 
 def Search(request):
+    cat=[i[1] for i in Category ]
     if request.method == "POST":
         print ("Subash le Bitch bhanyo")
         search_text = request.POST['search_text']
@@ -95,16 +119,18 @@ def Search(request):
                 print(i)
         else:
             products = []
-        return render_to_response( 'bazarmulya/search.html', {'products' : products})
+        return render_to_response( 'bazarmulya/search.html', {'products' : products,'category': cat})
 
 
 def Search_detail(request,product_id):
+    cat=[i[1] for i in Category ]
     objects = Prices.objects.filter(id=product_id)
     objects=Prices.objects.filter(product__contains=objects[0].product)
-    return render(request,'bazarmulya/Search_detail.html',{'objects':objects})
+    return render(request,'bazarmulya/Search_detail.html',{'objects':objects,'category': cat})
 
 
 def NotifyLike(request,getid):
+    cat=[i[1] for i in Category ]
     group = Group.objects.get(name='LocalAdmins')
     reciever_users = group.user_set.all()
     try:
@@ -120,6 +146,7 @@ def NotifyLike(request,getid):
     return redirect('/website')
 
 def UpdateValues(request):
+    cat=[i[1] for i in Category ]
     if request.method == 'POST':
         form = UploadForm(request.POST or None)
         if form.is_valid():
@@ -134,4 +161,4 @@ def UpdateValues(request):
     else:
         form = UploadForm()
     upload_values = Raw_Prices.objects.all()
-    return render(request, "bazarmulya/upload.html", {'form':form,'upload_values':upload_values})
+    return render(request, "bazarmulya/upload.html", {'form':form,'upload_values':upload_values,'category': cat})

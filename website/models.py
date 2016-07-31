@@ -2,6 +2,21 @@ from django.conf import settings
 from django.db import models
 
 # Create your models here.
+Locations=(
+    ("Kathmandu","Kathmandu"),
+    ("Biratnagar","Biratnagar"),
+    ("Dhulikhel","Dhulikhel"),
+)
+Category=(
+    (1,"Dairy"),
+    (2,"Digestives"),
+    (3,"Drinks and Beverages"),
+    (4,"Food"),
+    (5,"Morning Misc"),
+    (7,"NUtrition"),
+    (8,"Snackes")
+)
+
 
 class Raw_Prices(models.Model):
     product=models.CharField(max_length=30)
@@ -17,18 +32,12 @@ class Raw_Prices(models.Model):
 # tHIS WILL BE UPDATED VIA AN EXTERNAL CORNTAB SCRIPT
 class Prices(models.Model):
     product=models.CharField(max_length=30)
-    area=models.CharField(max_length=30)
+    area=models.CharField(choices=Locations,max_length=20)
     price=models.IntegerField()
-
+    category=models.IntegerField(choices=Category)
     def __str__(self):
-        return  str(self.product)
+        return str(self.product + " " + self.area)
 
-class Category(models.Model):
-    category = models.CharField(max_length=30)
-    product = models.ForeignKey(Prices)
-
-    def __str__(self):
-        return str(self.category)
 
 class Notification(models.Model):
     actor_id = models.ForeignKey(settings.AUTH_USER_MODEL,related_name='actor_id')
@@ -41,7 +50,8 @@ class Notification(models.Model):
 
 
 class NewsFeed(models.Model):
-    date=models.DateTimeField(auto_now_add=True)
+    date=models.DateField(auto_now_add=True)
     author=models.ForeignKey(settings.AUTH_USER_MODEL)
     title=models.CharField(max_length=100)
     data=models.TextField()
+

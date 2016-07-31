@@ -21,6 +21,7 @@
     <img class="home-image" alt="Bazar Mulya" src="{% static 'bazarmulya/images/BazarShop.jpg' %}" style="width: 100%;height: 400px;">
 </div>
         <!-- News Feed -->
+
                    <div>
                         <div class="w3-container w3-green">
                         <p class="w3-text-white">News Feed</p>
@@ -28,23 +29,16 @@
 
                        <div class="w3-section w3-margin">
                            <ul class="w3-ul w3-card-2">
+                               {%for new in news%}
+
                                <li class="w3-padding-16">
+
                                 <img src="http://placehold.it/60x60" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                <span class="w3-large">Lorem Ipsum</span><br>
+                                <span class="w3-large"> {{new.title}}</span><br>
+                                   <span class="w3-small"> {{new.date}}</span>
     <span><a class="w3-text-blue"href="#">Read More</a></span>
                            </li>
-
-                               <li class="w3-padding-16">
-                                <img src="http://placehold.it/60x60" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                <span class="w3-large">Lorem Ipsum</span><br>
-    <span><a class="w3-text-blue" href="#">Read More</a></span>
-                           </li>
-
-                               <li class="w3-padding-16">
-                                <img src="http://placehold.it/60x60" class="w3-left w3-circle w3-margin-right" style="width:60px">
-                                <span class="w3-large">Lorem Ipsum</span><br>
-    <span><a class="w3-text-blue"  href="#">Read More</a></span>
-                           </li>
+                               {%endfor%}
                                </ul>
                        </div>
                 </div>

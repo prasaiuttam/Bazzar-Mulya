@@ -1,10 +1,10 @@
 <html>
 <head>
     {% load staticfiles %}
-    <link rel="shortcut icon" href="{% static 'favicon/favicon.jpg' %}"/>>
+    <link rel="shortcut icon" href="{% static 'favicon/favicon.jpg' %}"/>
     <link rel="stylesheet" type="text/css" href="{% static 'bazarmulya/w3.css' %}"/>
 
-    <link rel="stylesheet" type="text/css" href="{% static 'bazarmulya/stylesheet.css' %}"/
+    <link rel="stylesheet" type="text/css" href="{% static 'bazarmulya/stylesheet.css' %}"/>
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css"/>
 
 
@@ -39,7 +39,14 @@
         <ul class="w3-navbar" style="line-height: 50px;">
             <li><a href="/website/">Home</a></li>
             <li><a href="#">Map</a></li>
-            <li><a href="#">Categories</a></li>
+            <li class="w3-dropdown-hover"><a href="#">Categories</a>
+                                <div class="w3-dropdown-content w3-white w3-card-2 w3-text-tiny" style="line-height: 10px;">
+                                    {%for i in category%}
+                                    <a href="/website/category_desc?cat={{i}}">{{i}}</a>
+                                    {%endfor%}
+                                </div>
+
+							</li>
             <li><a href="#">About Us</a></li>
             {% csrf_token %}
 

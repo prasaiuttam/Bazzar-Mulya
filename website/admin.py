@@ -4,5 +4,4 @@ admin.site.register(Raw_Prices)
 admin.site.register(Prices)
 # Register your models here.
 admin.site.register(Notification)
-admin.site.register(Category)
 admin.site.register(NewsFeed)
